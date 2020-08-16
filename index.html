@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Desafio - El Diario</title>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -141,23 +142,23 @@
                 </div>
                 <div class="main-content__sidebar__tags">
                     <h1>Tags </h1>
-                    <ul>
-                        <li>Viajes</li>
-                        <li>Noticias</li>
-                        <li>Comida</li>
-                    </ul>
+                    <div class="main-content__sidebar__tags__buttons">
+                        <button type="button" name="button" class="main-content__sidebar__tags__buttons__btn">Viajes</button>
+                        <button type="button" name="button" class="main-content__sidebar__tags__buttons__btn">Noticias</button>
+                        <button type="button" name="button" class="main-content__sidebar__tags__buttons__btn">Comida</button>
+                    </div>
                 </div>
                 <div class="main-content__sidebar__news">
                     <h1>Destacados </h1>
-                    <div class="main-content__sidebar__item">
+                    <div class="main-content__sidebar__news__item">
                         <h4>Lorem ipsum dolor sit amet.</h4>
                         <img src="https://picsum.photos/200/200?random=7" />
                     </div>
-                    <div class="main-content__sidebar__item">
+                    <div class="main-content__sidebar__news__item">
                         <h4>Lorem ipsum dolor sit amet.</h4>
                         <img src="https://picsum.photos/200/200?random=8" />
                     </div>
-                    <div class="main-content__sidebar__item">
+                    <div class="main-content__sidebar__news__item">
                         <h4>Lorem ipsum dolor sit amet.</h4>
                         <img src="https://picsum.photos/200/200?random=9" />
                     </div>
@@ -172,8 +173,7 @@
         <section class="newsletter">
             <h2>Lorem ipsum dolor sit amet</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-            <div class="newsletter__subscription">
-                <input type="text" name=""><button>Suscríbete</button>
+            <button type="submit" name="button" class="newsletter__subscription">Suscríbete</button>
             </div>
         </section>
         
@@ -182,7 +182,7 @@
         <!--footer-->
         
         <footer class="footer">
-            <p>Todos los derechos reservados</p>
+            <p class="derechos">Todos los derechos reservados</p>
         </footer>
         <!--footer end-->
         

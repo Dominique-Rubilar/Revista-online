@@ -29,44 +29,290 @@ body {
   }
 }
 
-.navegation {
+h1 {
+  font-size: 1em;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+h3 {
+  padding-top: 2em;
+}
+
+.derechos {
+  text-align: center;
+}
+
+.grid-container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 576px) {
+  .grid-container {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .grid-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .grid-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-container {
+    width: 1170px;
+  }
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px 10px;
+  margin-bottom: 10px;
+}
+
+.col-xs-12 {
+  grid-column: span 12;
+}
+
+.col-xs-11 {
+  grid-column: span 11;
+}
+
+.col-xs-10 {
+  grid-column: span 10;
+}
+
+.col-xs-9 {
+  grid-column: span 9;
+}
+
+.col-xs-8 {
+  grid-column: span 8;
+}
+
+.col-xs-7 {
+  grid-column: span 7;
+}
+
+.col-xs-6 {
+  grid-column: span 6;
+}
+
+.col-xs-5 {
+  grid-column: span 5;
+}
+
+.col-xs-4 {
+  grid-column: span 4;
+}
+
+.col-xs-3 {
+  grid-column: span 3;
+}
+
+.col-xs-2 {
+  grid-column: span 2;
+}
+
+.col-xs-1 {
+  grid-column: span 1;
+}
+
+@media (min-width: 768px) {
+  .col-sm-12 {
+    grid-column: span 12;
+  }
+
+  .col-sm-11 {
+    grid-column: span 11;
+  }
+
+  .col-sm-10 {
+    grid-column: span 10;
+  }
+
+  .col-sm-9 {
+    grid-column: span 9;
+  }
+
+  .col-sm-8 {
+    grid-column: span 8;
+  }
+
+  .col-sm-7 {
+    grid-column: span 7;
+  }
+
+  .col-sm-6 {
+    grid-column: span 6;
+  }
+
+  .col-sm-5 {
+    grid-column: span 5;
+  }
+
+  .col-sm-4 {
+    grid-column: span 4;
+  }
+
+  .col-sm-3 {
+    grid-column: span 3;
+  }
+
+  .col-sm-2 {
+    grid-column: span 2;
+  }
+
+  .col-sm-1 {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-12 {
+    grid-column: span 12;
+  }
+
+  .col-md-11 {
+    grid-column: span 11;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .col-md-1 {
+    grid-column: span 1;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-12 {
+    grid-column: span 12;
+  }
+
+  .col-lg-11 {
+    grid-column: span 11;
+  }
+
+  .col-lg-10 {
+    grid-column: span 10;
+  }
+
+  .col-lg-9 {
+    grid-column: span 9;
+  }
+
+  .col-lg-8 {
+    grid-column: span 8;
+  }
+
+  .col-lg-7 {
+    grid-column: span 7;
+  }
+
+  .col-lg-6 {
+    grid-column: span 6;
+  }
+
+  .col-lg-5 {
+    grid-column: span 5;
+  }
+
+  .col-lg-4 {
+    grid-column: span 4;
+  }
+
+  .col-lg-3 {
+    grid-column: span 3;
+  }
+
+  .col-lg-2 {
+    grid-column: span 2;
+  }
+
+  .col-lg-1 {
+    grid-column: span 1;
+  }
+}
+.navigation {
   padding: 10px;
   border-bottom: 1px solid gray;
 }
 
-.navegation__logo {
+.navigation__logo {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
 }
 
-.navegation__menu {
+.navigation__menu {
   text-align: right;
   float: right;
 }
 
-.navegation__menu ul {
+.navigation__menu ul {
   margin: 0;
 }
 
-.navegation__menu ul li {
+.navigation__menu ul li {
   display: inline-block;
 }
 
-.navegation__menu ul li a {
+.navigation__menu ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.navegation__menu__input {
+.navigation__menu__input {
   border-radius: 30px;
 }
 
 #navigation__menu__item__us {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   #navigation__menu__item__us {
     display: inline-block;
   }
@@ -204,11 +450,6 @@ body {
   height: 200px;
 }
 
-.footer {
-  margin: 0 auto;
-  text-align: center;
-}
-
 .main-content__sidebar__tags {
   border-bottom: 1px solid gray;
 }
@@ -224,6 +465,18 @@ body {
   margin-right: 1px;
   color: white;
   display: inline-block;
+}
+
+.footer {
+  text-align: center;
+  background-color: #EFEFEF;
+  width: 100%;
+  margin-top: 3em;
+}
+
+.input__menu-footer {
+  margin-bottom: 2em;
+  border-color: #EFEFEF;
 }
 
 /*# sourceMappingURL=main.css.map */
